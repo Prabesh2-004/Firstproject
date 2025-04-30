@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fafafa;
+    color: #262626;
+}
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #dbdbdb;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.logo {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+}
+
+.link-container,
+.more {
+    list-style: none;
+    width: 100%;
+}
+
+.link-container li,
+.more li {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.like-count{
+    margin-right: auto;
+}
+.uploaded-username{
+    margin-right: auto;
+}
+.userid-more{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.userid-more img{
+    height: 25px;
+    cursor: pointer;
+}
+.link-container li:hover,
+.more li:hover {
+    background-color: #f0f0f0;
+}
+.load-button{
+    padding: 10px 5px;
+    width: 100px;
+    cursor: pointer;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 800;
+    border-radius: 30px;
+    border: none;
+    margin-top: 15px;
+}
+.slider-1{
+    height: 50px;
+    background-color: gray;
+    border-radius: 10px;
+    width: 100%;
+}
+.link-container li a,
+.more li a {
+    text-decoration: none;
+    color: #262626;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row; /* Two-column layout */
+    margin-left: 20%; /* Leave space for the sidebar */
+    padding: 20px;
+    gap: 20px;
+}
+
+.main-feed {
+    flex: 3; /* Main feed takes up more space */
+    display: flex;
+    flex-direction: column; /* Stack feed items vertically */
+    gap: 20px; /* Add spacing between feed items */
+}
+
+.main-section {
+    width: 100%; /* Ensure full width for each feed item */
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Stack content vertically inside each section */
+    align-items: center; /* Center align images and content */
+}
+
+.main-section img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.expression {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Space out icons */
+    margin-top: 10px;
+}
+
+.expression img {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.expression img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.suggestion-box {
+    flex: 1; /* Suggestion box takes up less space */
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Adjust height to fit content */
+    position: sticky; /* Keep it fixed while scrolling */
+    top: 20px; /* Add spacing from the top */
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+.uploading-section{
+    flex: 0; /* Suggestion box takes up less space */
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Adjust height to fit content */
+    position: sticky; /* Keep it fixed while scrolling */
+    top: 20px; /* Add spacing from the top */
+}
+
+.image-preview{
+    height: fit-content;
+    width: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    background-color: white;
+}
+
+.upload-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+    background-color: #0056b3;
+}

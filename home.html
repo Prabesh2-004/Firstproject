@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css?v=1.0">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <aside>
+        <div class="sidebar-container">
+            <div class="logo">
+                <h1>Delta</h1>
+            </div>
+            <div class="link-container">
+                <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fas fa-search"></i> Search</a></li>
+                <li><a href="#"><i class="fas fa-compass"></i> Create</a></li>
+                <li><a href="#"><i class="fas fa-video"></i> Reels</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Message</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Notifications</a></li>
+                <li><a href="#"><i class="fas fa-bookmark"></i> Saved</a></li>
+                <li><a href="#"><i class="fas fa-user"></i> Profile</a></li>
+            </div>
+            <div class="more">
+                <li><a href="#"><i class="fas fa-cog"></i> Setting</a></li>
+            </div>
+        </div>
+    </aside>
+    <main>
+        <div class="body-container">
+            <!-- Main Feed -->
+            <div class="main-feed">
+                
+            </div>
+
+            <!-- Suggestion Box -->
+            <div class="suggestion-box">
+                <div class="top-section-upload">
+                    <div>
+                        <div class="slider-1"></div>
+                    </div>
+                    
+                    <label for="load-image" class="load-button">Upload <img src="icons/add_circle_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt=""></label>
+                    <input type="file" name="load-image" id="load-image" accept="image/*" style="display: none;">
+                </div>
+
+                <div class="uploading-details">
+                    <h4>Your Image: </h4>
+                    <div class="image-preview">
+                        <!-- Uploaded images will appear here -->
+                    </div>
+                    <div class="discription">
+                        <h4>Description: </h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="home.js"></script>
+</body>
+</html>
